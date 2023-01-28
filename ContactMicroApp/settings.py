@@ -77,6 +77,20 @@ WSGI_APPLICATION = 'ContactMicroApp.wsgi.application'
 
 import mysql.connector
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ecosystem',
+        'user': 'root',
+        'password': 'root',
+        'host': 'localhost',
+        'unix_socket': '/Applications/MAMP/tmp/mysql/mysql.sock',
+        'database': 'ecosystem',
+        'raise_on_warnings': True
+    },
+
+}
+
 config = {
   'user': 'root',
   'password': 'root',
